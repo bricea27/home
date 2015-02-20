@@ -1,0 +1,327 @@
+body {
+  padding-top: 20px;
+  color: #fff;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.btn {
+  background: none;
+  border: 2px solid #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background: #333;
+  border: 2px solid #333;
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn:focus {
+  outline: 0 !important;
+  color: #fff;
+}
+
+#username, #city {
+  display: none;
+}
+
+.weather {
+  margin-bottom: 48px;
+}
+
+.weather h4 {
+  font-weight: 300;
+}
+
+
+.icons {
+  float: right;
+  padding-right: 24px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.icons:hover {
+  color: #333;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.modal {
+  background: #000;
+}
+
+.modal-dialog {
+  width: 90%;
+  padding: 0;
+}
+
+.modal-content {
+  height: 100%;
+  background: #000;
+}
+
+.modal-header, .modal-footer{
+  border: none;
+}
+
+.close {
+  color: #fff;
+  text-shadow: none;
+  opacity: 1.0;
+  position: absolute;
+  top: 0px;
+  right: 10%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.close:hover {
+  color: #ccc;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.modal-dialog {
+  padding-top: 24px;
+}
+
+.modal-dialog h3 {
+  margin-bottom: 48px;
+}
+
+#fiveday {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+.day {
+  height: 300px;
+  display: inline-block;
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+.day h4 {
+  padding-top: 24px;
+  line-height: 1.5em;
+}
+
+.day .temp {
+  padding-top: 24px;
+}
+
+.quote h1 {
+  font-size: 3em;
+  line-height: 1.5em;
+}
+
+#get-quote {
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+/* Gradient Animations */
+#wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.dropdown-menu {
+  margin-top: 48px;
+  width: 240px;
+  background: rgba(255,255,255,0.5);
+  padding: 20px;
+  color: #fff;
+}
+
+.dropdown-menu input {
+  color: #333;
+  margin-bottom: 12px
+}
+
+/* #logout button {
+  background: #333;
+  border: none;
+}
+ */
+#changeForm {
+  position: relative;
+  height: 40px;
+  margin-bottom: 24px;
+  padding: 12px;
+}
+
+#changeCity {
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#submitChange {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 1.25em;
+  color: #ccc;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#submitChange:hover {
+  color: #333;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#changeCity {
+  color: #000;
+}
+
+#wrapper.home {
+  background: linear-gradient(270deg, #BA4082, #8e44ad);
+  background-size: 400% 400%;
+  -webkit-animation: backgroundAnimate 7s ease infinite;
+  -moz-animation: backgroundAnimate 7s ease infinite;
+  -o-animation: backgroundAnimate 7s ease infinite;
+  animation: backgroundAnimate 7s ease infinite;
+}
+
+.home input {
+  border: 2px solid #fff;
+  color: #333;
+  margin-right: 5px;
+}
+
+#sign-up {
+  padding-top: 40px;
+}
+
+#signUp, #sign-up button {
+  margin-top: 12px;
+}
+
+.jumbotron {
+  background: none;
+  text-align: center;
+  padding-top: 200px;
+}
+
+#wrapper.cold {
+  background: linear-gradient(270deg, #d4e6e2, #79d0f9, #92EAD6);
+  background-size: 400% 400%;
+  -webkit-animation: backgroundAnimate 10s ease infinite;
+  -moz-animation: backgroundAnimate 10s ease infinite;
+  -o-animation: backgroundAnimate 10s ease infinite;
+  animation: backgroundAnimate 10s ease infinite;
+}
+
+#wrapper.mild {
+  background: linear-gradient(270deg, #83FAB6, #81e0a9, #6CE37D);
+  background-size: 400% 400%;
+  -webkit-animation: backgroundAnimate 10s ease infinite;
+  -moz-animation: backgroundAnimate 10s ease infinite;
+  -o-animation: backgroundAnimate 10s ease infinite;
+  animation: backgroundAnimate 10s ease infinite;
+}
+
+#wrapper.hot {
+  background: linear-gradient(270deg, #FF8E98, #ff8d97, #ff4252);
+  background-size: 400% 400%;
+  -webkit-animation: backgroundAnimate 10s ease infinite;
+  -moz-animation: backgroundAnimate 10s ease infinite;
+  -o-animation: backgroundAnimate 10s ease infinite;
+  animation: backgroundAnimate 10s ease infinite;
+}
+
+
+@-webkit-keyframes backgroundAnimate {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes backgroundAnimate {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes backgroundAnimate {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes backgroundAnimate {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+
+
+/******* Media Queries *******/
+
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}

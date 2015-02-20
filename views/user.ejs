@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Bootstrap CSS -->
+  <title>Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/weather-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <section id="wrapper">
+    <div class = "container">
+
+      <span id="username"><%= username %></span>
+      <span id="city"><%= city %></span>
+
+      <div class="weather">
+      <div class="dropdown">
+        <h3 id="show-settings" class="icons ropdown-toggle" type="button" id="settings-dropdown" data-toggle="dropdown" aria-expanded="true">
+          <i class="fa fa-cog" data-toggle="tooltip" data-placement="top" title="Settings"></i>
+        </h3>
+        <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="settings-dropdown">
+          <div class="form-group" id="changeForm">
+            <input type="text" name="newCity" placeholder="Change City" id="changeCity" class="form-control" autofocus>
+            <i class="fa fa-map-marker" id="submitChange"></i>
+          </div>
+          <form action="/session" method="POST" id="logout">
+            <input type="hidden" name="_method" value="DELETE"> <!-- overriding the method in the form tag -->
+            <button class="btn">Logout</button>
+          </form>
+        </div>
+      </div>
+        <h3 id="show-forecast" class="icons" data-toggle="modal" data-target="#forecast">
+          <i class="fa fa-area-chart" data-toggle="tooltip" data-placement="top" title="Forecast"></i>
+        </h3>
+
+        <h1><i id="icon"></i></h1>
+        <h3><span id="currentCity"><%= city %></span></h3>
+        <h4 id="summary"></h4>
+        <h4 id="temperature"></h4>
+      </div>
+
+      <div class="quote">
+        <h1 id="quote"></h1>
+        <button id="get-quote" class="btn">Inspire Me</button>
+      </div>
+
+      <div class="modal fade"  id="forecast">
+        <div class="modal-dialog">
+          <div class="container">
+            <h1 class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle"></i></h1>
+            <ul id="fiveday">
+            </ul>
+          </div>
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="js/norris.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

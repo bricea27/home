@@ -1,0 +1,31 @@
+{
+  "name": "dash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^0.8.1",
+    "body-parser": "^1.11.0",
+    "ejs": "^2.2.4",
+    "express": "^4.11.2",
+    "express-session": "^1.10.2",
+    "fs": "^0.0.2",
+    "request": "^2.53.0",
+    "sqlite3": "^3.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bricea27/Dash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bricea27/Dash/issues"
+  },
+  "homepage": "https://github.com/bricea27/Dash"
+}

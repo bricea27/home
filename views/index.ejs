@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Bootstrap CSS -->
+  <title>Home</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section id="wrapper" class="home">
+
+    <div class = "container">
+
+      <nav>
+        <form action="/session" method="POST" class="navbar-form navbar-right">
+          <div class="form-group">
+            <input type="text" name="username" class="form-control" placeholder="Name">
+          </div>
+          <input type="password" name="password" class="form-control" placeholder="Password">
+          <button class="btn">Log In</button>
+        </form>
+      </nav>
+
+      <div class="jumbotron">
+        <h1> Welcome Home</h1>
+        <p>Create your personal homepage and get inspired to kick the day's ass.</p>
+        <button id="signUp" class="btn" data-toggle="modal" data-target="#sign-up">Sign Up</button>
+      </div>
+
+      <div class="modal fade"  id="sign-up">
+        <div class="modal-dialog">
+          <div class="container">
+            <h1 class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times-circle"></i></h1>
+            <div class="col-sm-4 col-sm-offset-4">
+              <form action="/user" method="POST">
+                <h2> Create Account: </h2>
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" name="username" id="name" class="form-control" autofocus>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" name="password" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="confirmPassword">Confirm Password:</label>
+                  <input type="password" name="confirmPassword" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="city">City:</label>
+                  <input type="city" name="city" class="form-control">
+                </div>
+                <button class="btn">Submit</button>
+              </form>
+            </div>
+            </div>
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
