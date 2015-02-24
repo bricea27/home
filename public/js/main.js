@@ -27,10 +27,12 @@ function getWeather(url){
     var data = xhr.responseText;
     var parsed = JSON.parse(data);
     console.log(parsed);
+    console.log(city);
 
     var daily = parsed["daily"]["data"];
     var fiveday = daily.splice(0, 5);
     var list = document.getElementById("fiveday");
+
     fiveday.forEach(function(each){
       console.log(each);
       var day = document.createElement("li");
@@ -205,8 +207,5 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
 
-$('.dropdown-menu').click(function(e) {
-  e.stopPropagation();
-});
 
 });

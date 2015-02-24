@@ -20,18 +20,14 @@
 
       <div class="weather">
       <div class="dropdown">
-        <h3 id="show-settings" class="icons ropdown-toggle" type="button" id="settings-dropdown" data-toggle="dropdown" aria-expanded="true">
+        <h3 id="show-settings" class="icons dropdown-toggle" type="button" id="settings-dropdown" data-toggle="dropdown" aria-expanded="true">
           <i class="fa fa-cog" data-toggle="tooltip" data-placement="top" title="Settings"></i>
         </h3>
         <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="settings-dropdown">
-          <div class="form-group" id="changeForm">
+          <div class="form-group">
             <input type="text" name="newCity" placeholder="Change City" id="changeCity" class="form-control" autofocus>
-            <i class="fa fa-map-marker" id="submitChange"></i>
+            <button class="btn dropdown-toggle" id="submitChange" data-toggle="dropdown" aria-expanded="false"> Submit </button>
           </div>
-          <form action="/session" method="POST" id="logout">
-            <input type="hidden" name="_method" value="DELETE"> <!-- overriding the method in the form tag -->
-            <button class="btn">Logout</button>
-          </form>
         </div>
       </div>
         <h3 id="show-forecast" class="icons" data-toggle="modal" data-target="#forecast">
@@ -48,6 +44,11 @@
         <h1 id="quote"></h1>
         <button id="get-quote" class="btn">Inspire Me</button>
       </div>
+
+      <form action="/session" method="POST" id="logout">
+        <input type="hidden" name="_method" value="DELETE"> <!-- overriding the method in the form tag -->
+        <button class="btn">Logout</button>
+      </form>
 
       <div class="modal fade"  id="forecast">
         <div class="modal-dialog">

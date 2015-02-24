@@ -141,6 +141,6 @@ app.delete('/session', function(req, res){
   res.redirect("/");
 });
 
-var server = app.listen(80, function() {
+var server = app.listen(3000, function() {
   console.log('Server is listening on port 3000');
 });
