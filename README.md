@@ -1,6 +1,6 @@
 # Welcome Home
 
-This is a dashboard for the browser, featuring the weather of your current city, and quotes from the clever Internet Chuck Norris Databse to inspire you to kick the day's ass.
+This is a dashboard for the browser, featuring the weather of your current city, and quotes from the clever Internet Chuck Norris Databse to inspire you to kick the day's butt.
 
 ##API's Involved:
 * [The Internet Chuck Norris Database](http://www.icndb.com/api/)
