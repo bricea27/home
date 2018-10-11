@@ -6,6 +6,7 @@ var name = username.innerHTML;
 var currentCity = document.getElementById("currentCity");
 var weatherUrl = "/" + name + "/weather";
 
+console.log("weatherUrl", weatherUrl);
 getWeather(weatherUrl);
 
 var city = document.getElementById("city");
