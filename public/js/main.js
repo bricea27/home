@@ -191,7 +191,7 @@ submitChange.addEventListener("click", function(name){
 });
 
 function newQuote(name){
-  var url = "http://api.icndb.com/jokes/random?firstName=" + name + "&lastName=";
+  var url = "https://api.icndb.com/jokes/random?firstName=" + name + "&lastName=";
   var xhr = new XMLHttpRequest();
   xhr.open("GET", url);
   xhr.addEventListener('load', function(e) {
