@@ -7,11 +7,13 @@ var fs = require('fs');
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database("users.db");
 var app = express();
-var secret = require('./secret.json');
+// var secret = require('./secret.json');
 
 
-var googKey = secret["key1"];
-var forecastKey = secret["key2"];
+// var googKey = secret["key1"];
+// var forecastKey = secret["key2"];
+var googKey = process.env["GOOG_KEY"];
+var forecastKey = process.env["WEATHER_KEY"];
 
 app.use(session({
   secret: "penguin",
@@ -141,6 +143,6 @@ app.delete('/session', function(req, res){
   res.redirect("/");
 });
 
-var server = app.listen(3000, function() {
-  console.log('Server is listening on port 3000');
+var server = app.listen(5000, function() {
+  console.log('Server is listening on port 5000');
 });
