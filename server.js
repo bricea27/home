@@ -7,6 +7,7 @@ var fs = require('fs');
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database("users.db");
 var app = express();
+var port = process.env.PORT || 3000;
 // var secret = require('./secret.json');
 
 
@@ -143,6 +144,6 @@ app.delete('/session', function(req, res){
   res.redirect("/");
 });
 
-var server = app.listen(5000, function() {
-  console.log('Server is listening on port 5000');
+var server = app.listen(port, function() {
+  console.log(`Server is listening on port ${port}`);
 });
